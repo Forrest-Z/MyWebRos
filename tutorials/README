@@ -1,0 +1,37 @@
+
+- $roslaunch rosbridge_server rosbridge_websocket.launch
+- $rosbridge_address
+
+- Unit5: 
+	+ $rosrun web_video_server web_video_server _port:=11315
+	+ $webvideo_address
+	+ $wget https://bitbucket.org/theconstructcore/mjpegcanvasjs/raw/dbc3ed2d70ba251d0b10b1c3aac246f438054c5f/build/mjpegcanvas.min.js
+	+ https://bitbucket.org/theconstructcore/mjpegcanvasjs/raw/dbc3ed2d70ba251d0b10b1c3aac246f438054c5f/build/mjpegcanvas.min.js
+
+- Unit6: 
+	+ $rosrun course_web_dev_ros example_services.py
+	+ $rosrun course_web_dev_ros hector_services.py
+
+- Unit7:
+	+ https://github.com/RobotWebTools/ros2djs
+	+ roslaunch course_web_dev_ros web.launch
+
+Unit8: 
+	+ rosrun course_web_dev_ros robot_params.py
+
+Unit9:
+	+ https://github.com/RobotWebTools/ros3djs
+	+ https://i-0f26dfb85f9db9247.robotigniteacademy.com/jupyter/files/web_interfaces_for_ros/topic_09/libraries/three.min.js.txt
+	+ https://i-0f26dfb85f9db9247.robotigniteacademy.com/jupyter/files/web_interfaces_for_ros/topic_09/libraries/three.min.js.txt
+	+ https://i-0f26dfb85f9db9247.robotigniteacademy.com/jupyter/files/web_interfaces_for_ros/topic_09/libraries/ColladaLoader2.js.txt
+	+ https://i-0f26dfb85f9db9247.robotigniteacademy.com/jupyter/files/web_interfaces_for_ros/topic_09/libraries/STLLoader.js.txt
+	+ https://i-0f26dfb85f9db9247.robotigniteacademy.com/jupyter/files/web_interfaces_for_ros/topic_09/libraries/ros3d.min.js.txt
+	+ $roslaunch course_web_dev_ros web.launch
+	+ $roslaunch course_web_dev_ros tf2_web.launch
+
+Unit10:
+	+ $roslaunch course_web_dev_ros web.launch
+	+ $rosrun course_web_dev_ros example_action_server.py
+
+Unit11:
+	+ $roslaunch course_web_dev_ros project.launch
