@@ -1,25 +1,31 @@
 
-- $roslaunch rosbridge_server rosbridge_websocket.launch
-- $rosbridge_address
+- Run WebServer: $roslaunch rosbridge_server rosbridge_websocket.launch
+- Check address of webserver: $rosbridge_address (default: ws://0.0.0.0:9090)
 
-- Unit5: 
+- Unit0: Introuction
+- Unit1: Setting up our development enviroment (part1)
+- Unit2: Setting up our development enviroment (part2)
+- Unit3: Move the Robot! Publishing to a topic!
+- Unit4: Move the Robot! Using a Joystick!
+
+- Unit5: Tracking the Robot! Subscribing to a topic
 	+ $rosrun web_video_server web_video_server _port:=11315
 	+ $webvideo_address
 	+ $wget https://bitbucket.org/theconstructcore/mjpegcanvasjs/raw/dbc3ed2d70ba251d0b10b1c3aac246f438054c5f/build/mjpegcanvas.min.js
 	+ https://bitbucket.org/theconstructcore/mjpegcanvasjs/raw/dbc3ed2d70ba251d0b10b1c3aac246f438054c5f/build/mjpegcanvas.min.js
 
-- Unit6: 
+- Unit6: Inside the Robot! Showing camera on the web page!
 	+ $rosrun course_web_dev_ros example_services.py
 	+ $rosrun course_web_dev_ros hector_services.py
 
-- Unit7:
+- Unit7: Calling ROS services from the web
 	+ https://github.com/RobotWebTools/ros2djs
 	+ roslaunch course_web_dev_ros web.launch
 
-Unit8: 
+- Unit8: Showing a map on the web page
 	+ rosrun course_web_dev_ros robot_params.py
 
-Unit9:
+- Unit9: Tunning your robotics algorithms! ROS Parameter!
 	+ https://github.com/RobotWebTools/ros3djs
 	+ https://i-0f26dfb85f9db9247.robotigniteacademy.com/jupyter/files/web_interfaces_for_ros/topic_09/libraries/three.min.js.txt
 	+ https://i-0f26dfb85f9db9247.robotigniteacademy.com/jupyter/files/web_interfaces_for_ros/topic_09/libraries/three.min.js.txt
@@ -29,9 +35,11 @@ Unit9:
 	+ $roslaunch course_web_dev_ros web.launch
 	+ $roslaunch course_web_dev_ros tf2_web.launch
 
-Unit10:
+- Unit10: 3D Visualization for Robots on Webpages
 	+ $roslaunch course_web_dev_ros web.launch
 	+ $rosrun course_web_dev_ros example_action_server.py
 
-Unit11:
+- Unit11: Using ROS Action Servers from the Web
 	+ $roslaunch course_web_dev_ros project.launch
+
+- Unit12: Final Project!
